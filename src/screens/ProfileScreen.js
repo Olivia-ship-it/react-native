@@ -1,12 +1,13 @@
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
+import Login from '../components/Login';
+import Signup from '../components/Signup';
 
-const ComponentsScreen = () => {
-    const greeting = ['aasf', 'bbbb'];
-
+const ProfileScreen = () => {
     return (
     <View>
-        <Text style={styles.textStyle}>This is the profile screen</Text>
+        <Login />
+        <Signup />
     </View>
     );
 };
@@ -17,4 +18,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ComponentsScreen;
+export default ProfileScreen;
