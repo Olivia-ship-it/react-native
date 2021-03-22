@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
-import { View, Text } from 'native-base';
+import React, { Component } from "react";
+import { StyleSheet, Text } from 'react-native'
 
-const Signup = () => {
-  return (
-      
-    <View><Text>Signup</Text></View>
-  );
-};
+class Signup extends Component {
+  render() {
+    return (
+      <Text>hey</Text>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+
+});
 
 export default Signup;

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text } from 'native-base';
+import { View, Text } from 'react-native';
 
 const Login = () => {
-  return (
-      
-    <View><Text>Login</Text></View>
+  return (      
+    <View>
+      <Text>Login</Text>
+    </View>
   );
 };
 

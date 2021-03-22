@@ -14,8 +14,8 @@ function MyTabs() {
     <Tab.Navigator
       initialRouteName="Home"
       activeColor="#ffffff"
-      inactiveColor="#957D95"
-      barStyle={{ backgroundColor: '#3A0CA3', paddingBottom: 15}}
+      inactiveColor="#264653"
+      barStyle={{ backgroundColor: '#2a9d8f', paddingBottom: 15}}
       tabBarOptions={{ showLabel: false }}
       labeled={false}
     >
