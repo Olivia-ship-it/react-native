@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 function Item({ item }) {
   return (
     <View style={styles.listItem}>
-      <Image source={{uri:item.photo}}  style={{width:150, height:150,borderRadius:5}} />
+      <Image source={{uri:item.photo}}  style={{width:160, height:160,borderRadius:5}} />
       <View style={{alignItems:"center"}}>
         <Text style={{fontWeight:"bold"}}>{item.name}</Text>
       {/* <TouchableOpacity style={{height:50,width:50, justifyContent:"center",alignItems:"center"}}>
@@ -62,7 +62,6 @@ export default class ImageGrid extends React.Component {
     ]
   }
 
-
   render(){
     return (
       <View style={styles.container}>
@@ -71,7 +70,7 @@ export default class ImageGrid extends React.Component {
           data={this.state.data}
           renderItem={({ item }) => <Item item={item}/>}
           numColumns={2}
-          keyExtractor={item => item.email}
+          keyExtractor={item => item.name}
         />
       </View>
     );
@@ -85,8 +84,8 @@ const styles = StyleSheet.create({
     marginTop:60
   },
   listItem:{
-    margin:10,
-    padding:10,
+    margin:5,
+    padding:5,
     backgroundColor:"#FFF",
     width:"80%",
     flex:1,
