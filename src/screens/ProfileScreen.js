@@ -6,7 +6,6 @@ import Login from '../components/Login';
 const Profile = () => {
     
     const [shouldLogin, setShouldLogin] = useState(false);
-    const [shouldSignUp, setShouldSignUp] = useState(false);
     
     return (
     <View style={styles.container}>
